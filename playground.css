@@ -1,0 +1,213 @@
+.card-skill{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32vh;
+    height:42vh;
+    padding: 6px 4px;
+    border-radius: 5px;
+}
+.card-skill:hover{
+    box-shadow:2px 2px 2px black;
+    border: 0.2px solid black;
+}
+.card-skill img{
+    width: 28vh;
+    height:30vh;
+    margin: 3PX 0PX;
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+#skill-slider{
+    display: flex;
+    gap: 1.6vh;
+    padding: 3vh 3vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-text{
+    font-size: 1.33rem;
+    font-weight: 600;
+}
+.card-skill .badge{
+    margin: 2px  0PX;
+    right: 0;
+    top: 0;
+}
+
+
+.active .page-link{
+    background-color: rgb(165, 43, 226);
+    border-color: rgb(165, 43, 226);
+}
+ .page-item a{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.card-ed{
+    background-color: rgba(0, 255, 255, 0.124);
+}
+
+.card-ed:hover{
+    box-shadow: 5px 2px 2px black;
+}
+#edu-slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5.5vh 2vh;
+    gap: 2vh;
+}
+.card-title{
+    /* padding: 1vh; */
+
+}
+.ed-text{
+    color: rgb(33, 142, 0);
+}
+.img-ed{
+    width: 30vh;
+    height: 30vh;
+}
+.ed-caed-cont{
+    width: 100%;
+}
+.card-ed{
+    width: 180vh;
+}
+.lable{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+.poster img{
+    width: 200vh;
+}
+.poster{
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0vh;
+    margin-bottom: 3;
+    margin-top: 2vh;
+}
+#skills-cont{
+    padding-top: 5vh;
+}
+.img-thumbnail{
+    border: none;
+}
+.card-pro{
+    width: 65vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid rgba(0, 0, 0, 0.376); */
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px 5px;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.card-pro:hover{
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.img-c img{
+    width: 22vh;
+    height: 22vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@800&family=Bricolage+Grotesque&family=Fuggles&family=Lato:wght@700&family=Poppins:wght@500&family=Roboto&family=Roboto+Slab:wght@600&family=Rubik:wght@500&family=Ubuntu:wght@500&display=swap');
+.card-body-pro{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+/* .btn-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#Pro-slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+.projects-container{
+    margin-top: 12vh;
+    gap: 5vh;
+    padding: 2vh 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+.card-pro{
+    position: relative;
+}
+.btn-c{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    bottom: -100%;
+    background-color: rgba(240, 248, 255, 0.681);
+}
+.card-pro:hover .btn-c{
+    bottom: 0;
+}
+
+.card-skill:hover {
+    transform: translate3D(0,-10px,0) scale(1.03);
+  }
+
+
+  @media screen and (max-width:450px) {
+    .card-skill{
+        width: 25vh;
+        height:34vh;
+        padding: 3px 2px;
+        border-radius: 5px;
+    }
+    .card-skill:hover{
+        box-shadow:2px 2px 2px black;
+        border: 0.2px solid black;
+    }
+    .card-skill img{
+        width: 22vh;
+        height:24vh;
+        margin: 3PX 0PX;
+    }
+    .skills-container{
+        
+        gap: 0.4vh;
+    }
+    #skill-slider{
+        display: flex;
+        gap: 1.6vh;
+        padding: 2vh 1.4vh;
+    }
+    
+    .card-text{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .card-skill .badge{
+        margin: 2px  0PX;
+        right: 0;
+        top: 0;
+    }
+  }

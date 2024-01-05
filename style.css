@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato:wght@700&family=Roboto&family=Roboto+Slab:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Fuggles&family=Lato:wght@700&family=Roboto&family=Roboto+Slab:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Fuggles&family=Lato:wght@700&family=Roboto&family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Bricolage+Grotesque&family=Fuggles&family=Lato:wght@700&family=Roboto&family=Roboto+Slab:wght@600&family=Rubik:wght@500&family=Ubuntu:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* h3 {
+  color: rgb(255, 255, 255);
+  padding: 5px 9px;
+} */
+.body-container{
+    display: flex;
+}
+.main {
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-scene{
+  border-radius: 360px;
+  width: 190vh;
+  height: 50vh;
+  background-color: aqua;
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+  padding: 3vh 3vh 3vh 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+#Home{
+  padding: 5vh;
+  margin-bottom: 3vh;
+  height: 76vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(251, 255, 10);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0px 0px 180px rgb(208, 255, 0);
+  border-radius: 19px;
+}
+
+
+.right{
+  /* background-color: aqua; */
+  display: flex;
+  height: 70%;
+}
+.right img{
+  width: 50vh;
+  height: 35vh;
+  align-self: last baseline;
+}
+#left{
+  cursor: pointer;
+  padding: 13vh 2vh;
+  background-color: transparent;
+}
+#know{
+  background-color: aqua;
+  height: 12vh;
+  width: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 360px;
+  font-family: cursive;
+  position: fixed;
+  opacity: 0;
+}
+
+
+
+
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* FONTS SIZES*/
+textarea::placeholder{
+  color: rgb(0, 0, 0);
+}
+.F-2{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto Slab', serif;
+}
+.home-fonts{
+  font-size: 7.5rem;
+  text-shadow: 0px 0px 5px violet;
+}
+.home-fonts-m{
+  font-size: 4rem;
+  color: rgb(174, 0, 255);
+  font-family: Asap, sans-serif;
+}
+.home-fonts::selection{
+  background-color: black;
+  color: white;
+}
+.home-fonts-m::selection{
+  background-color: rgb(170, 0, 255);
+  color: rgb(255, 255, 255);
+}
+
+
+
+/* fonts families */
+/* 
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Fuggles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; 
+*/
+
+
+
+/* slider edu */
+
+#Description{
+  background-color: rgba(6, 6, 6, 0.265);
+  border-radius: 10px;
+  padding: 10vh 0vh;
+}
+
+#edu-slider {
+  
+  gap: 2vh;
+  max-width: 100%; /* Adjust the total width based on the number of cards */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align the cards container in the center */
+  overflow-x: auto;
+  transition: 1s all;
+}
+
+
+.edu-container {
+  gap: 4vh;
+  display: flex;
+  min-height: max-content;
+  flex-direction: column;
+  align-items: center; /* Align the cards container in the center */
+   overflow-x: auto; /*Enable horizontal scrolling for the container */
+   padding: 5vh 2vh;
+   /* background-color: rgba(0, 0, 0, 0.101); */
+}
+
+.edu-cards,.pro-cards {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 250, 250, 0.397);
+  min-width: 400px; /* Set a minimum width for each card */
+  height: 200px;
+  margin-right: 10px; 
+  border-radius: 10px;
+  gap: 1vh;
+  border: 4px rgb(174, 255, 0) double;
+ } 
+ #edu-slider::-webkit-scrollbar{
+  display: none;
+}
+
+.edu-head{
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1vh 0vh;
+}
+#edu-card1 .edu-head{
+  color: rgb(222, 55, 0);
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+#edu-card2 .edu-head{
+  color: rgb(255, 234, 0);
+  text-shadow: 0px 0px 8px rgb(144, 0, 255);
+}
+#edu-card3 .edu-head{
+  color: rgb(76, 0, 255);
+  text-shadow: 0px 0px 8px rgb(0, 230, 226);
+}
+#edu-card4 .edu-head{
+  color: rgb(0, 255, 183);
+  text-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+#edu-card5 .edu-head{
+  color: rgb(255, 64, 0);
+  text-shadow: 0px 0px 10px rgb(251, 255, 0);
+}
+.edu-from{
+  color: rgb(165, 43, 226);
+  text-decoration: underline;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgb(255, 241, 254);
+}
+.edu-marks{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgb(255, 241, 254);
+}
+
+
+
+
+
+#scrollbtn-cont{
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.509);
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1.5vh;
+  cursor: pointer;
+}
+#scrollbtn-cont svg{
+  color: white;
+}
+svg:hover {
+  color: rgb(208, 255, 0);
+}
+#scrollbtn,#skillbtn{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+/* skills */
+.skills-container{
+  gap: 4vh;
+  display: flex;
+  min-height: max-content;
+  flex-direction: column;
+  align-items: center; /* Align the cards container in the center */
+   overflow-x: auto; /*Enable horizontal scrolling for the container */
+   padding: 5vh 2vh;
+   /* background-color: rgba(0, 0, 0, 0.101); */
+}
+#skill-slider{
+  gap: 2vh;
+  max-width: 100%; /* Adjust the total width based on the number of cards */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align the cards container in the center */
+  overflow-x: auto;
+  transition: 1s all;
+}
+#Pro-slider{
+  gap: 2vh;
+  max-width: 100%; /* Adjust the total width based on the number of cards */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align the cards container in the center */
+  overflow-x: auto;
+  transition: 1s all;
+}
+#skill-slider::-webkit-scrollbar{
+  display: none;
+}
+.skill-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(26, 24, 24, 0.348);
+  min-width: 300px; /* Set a minimum width for each card */
+  height: 250px;
+  margin-right: 10px; 
+  border-radius: 10px;
+  gap: 5vh;
+}
+.skill-cards img{
+  width: 20vh;
+  height: 20vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Fuggles&family=Lato:wght@700&family=Roboto&family=Roboto+Slab:wght@600&family=Ubuntu:wght@500&display=swap');
+.skill-cards .skill{
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-shadow: 2px 0px 10px rgb(0, 255, 72);
+}
+
+.projects-container{
+  
+  gap: 4vh;
+  display: flex;
+  min-height: max-content;
+  flex-direction: column;
+  align-items: center; /* Align the cards container in the center */
+   overflow-x: auto; /*Enable horizontal scrolling for the container */
+   padding: 5vh 2vh;
+   /* background-color: rgba(26, 25, 25, 0.101); */
+
+}
+#Pro-slider{
+  gap: 2vh;
+  max-width: 100%; /* Adjust the total width based on the number of cards */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align the cards container in the center */
+  overflow-x: auto;
+  transition: 1s all;
+}
+#Pro-slider::-webkit-scrollbar{
+  display: none;
+}
+.pro-cards{
+  background-color: rgba(0, 0, 0, 0.421);
+  border: 3px solid rgba(255, 255, 255, 0.307);
+}
+.project-name{
+font-size: 1.6rem;
+font-weight: 600;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(255, 255, 255);
+text-shadow: 0px 0px 10px rgb(187, 255, 0);
+}
+.project-skill{
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(60, 255, 0);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.messegebox{
+  display: flex;
+  flex-direction: column;
+}
+.messegebox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 225, 255);
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+.lable-messege{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+}
+.messegebox table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 2vh 12vh;
+  border-radius: 10px;
+}
+.messegebox table tr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5vh;
+}
+.messegebox input{
+  text-align: center;
+  font-size: 1rem;
+  /* width: 50vh; */
+  padding: 0.9vh 0.5vh;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+
+
+
+
+
+
+
+
+.messegebox textarea::placeholder{
+  color: aliceblue;
+}
+.messegebox input::placeholder{
+  color: aliceblue;
+}
+.messegebox textarea{
+  text-align: center;
+  font-size: 1.1rem;
+  width: 50vh;
+  color: white;
+  padding: 1vh;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.644);
+
+}
+@media screen and (max-width:450px) {
+  .messegebox table{
+      padding: 2vh 2vh;
+  }
+  .messegebox input{
+    font-size: 0.7rem;
+    width: 36vh;
+  }
+  .messegebox textarea{
+    width: 36vh;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:450px) {
+  .messegebox table{
+      padding: 2vh 2vh;
+  }
+  .messegebox input{
+    font-size: 0.7rem;
+    width: 32vh;
+  }
+  .messegebox textarea{
+    width: 32vh;
+    font-size: 0.7rem;
+  }
+}
+.submit{
+  width: 10vh;
+  background-color: rgba(0, 0, 0, 0.644);
+}
+.inpbox{
+  width: 50vh;
+  background-color: rgba(0, 0, 0, 0.644);
+
+}
+.social_media-container{
+  padding: 1vh 0vh;
+  margin-top: -4.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.9vh;
+  border-radius: 10px;
+}
+.social{
+  display: flex;
+  gap: 1.5vh;
+}
+.social svg{
+  width: 4.5vh;
+  height: 4.5vh;
+  gap: 2.4vh;
+}
+
+
+
+/* resume */
+
+#Resume{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5VH;
+  padding: 4vh 0vh;
+  margin: 1VH 0VH;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.pdf img{
+  width: 70vh;
+  height: 90vh;
+  border: 2PX solid rgb(0, 0, 0);
+}
+.pdf button{
+  font-size: 1.3REM;
+  font-weight: 600;
+  padding: 10PX 8PX;
+  border-radius: 10PX;
+  border: 0px;
+  color: rgb(183, 0, 255);
+  background-color: transparent;
+}
+.pdf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4VH;
+  align-items: center;
+}
+.pdf span{
+  padding: 6px 10px;
+  background-color: rgba(0, 0, 0, 0.703);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+
+#About{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 4vh 0vh;
+}
+.program{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media screen and (max-width:1100px) {
+  .home-fonts{
+font-size: 7.5rem;
+  }
+  .home-fonts-m{
+font-size: 4rem;
+  }
+  }
+  @media screen and (max-width:870px) {
+    .home-fonts{
+  font-size: 7rem;
+    }
+    .home-fonts-m{
+  font-size: 3.2rem;
+    }
+    #left{
+      padding: 16vh 2vh;
+    }
+    }
+    @media screen and (max-width:700px) {
+      .home-fonts{
+    font-size: 5.6rem;
+      }
+      .home-fonts-m{
+    font-size: 2.7rem;
+      }
+      #left{
+        padding: 14vh 2vh;
+      }
+      }
+      @media screen and (max-width:600px) {
+        .home-fonts{
+      font-size: 5rem;
+        }
+        .home-fonts-m{
+      font-size: 2.5rem;
+        }
+        }
+        @media screen and (max-width:400px) {
+          .home-fonts{
+        font-size: 4rem;
+          }
+          .home-fonts-m{
+        font-size: 2rem;
+          }
+          #left{
+            padding: 11vh 2vh;
+          }
+          }
+
+
+/* 
+
+
+.btn-to-about{
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  font-family: Asap, sans-serif;
+  background-color: rgb(172, 83, 255);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid white;
+  margin-top: 3vh;
+}
+.btn-to-about svg{
+  width: 6vh;
+  height: 4vh;
+  stroke: white;
+  stroke-width: 2px;
+} */
+
+
+
+
+
+
+
+
+#downloadbtn{
+  border: 2px solid rgba(0, 0, 0, 0.219);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.696);
+  padding: 1.9vh 2.5vh;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: Asap, sans-serif;
+  border-radius: 20px;
+}
+#downloadbtn:hover{
+  background-color: rgb(195, 0, 255);
+  color: white;
+}
+.cvbtncont{
+  padding: 9px 0px;
+}
+.under{
+  border-right: 80vh solid black;
+}
